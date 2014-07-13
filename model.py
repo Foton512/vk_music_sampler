@@ -54,7 +54,7 @@ class Model(QObject):
             self.infoReady.emit("Users processed: {nUsersCurrent}/{nUsers}".format(
                                 nUsersCurrent = i, nUsers = self.nUsers))
 
-            #sleep(0.3)
+            sleep(sleepTime)
 
         audiosList = list(audios)
         shuffle(audiosList)

@@ -40,7 +40,6 @@ class VkRequestProcessor(QObject):
             url = "{}{}".format(urlMainPart, urlCaptchaPart)
             if len(urlCaptchaPart) > 0:
                 urlCaptchaPart = ""
-            print url
 
             resStr = urllib.urlopen(url).read()
             res = json.loads(resStr)

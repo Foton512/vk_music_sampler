@@ -22,6 +22,7 @@ class CaptchaDialog(QDialog):
         browser.setMaximumHeight(50)
         layout.addWidget(browser)
         self.captchaEdit = QLineEdit()
+        self.captchaEdit.setFocus()
         layout.addWidget(self.captchaEdit)
         okButton = QPushButton(u"OK")
         okButton.clicked.connect(self.signalAndClose)
